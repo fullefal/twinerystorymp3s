@@ -132,12 +132,37 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 @keyframes glow {
   0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5); }
   100% { text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1); }
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="0,0" size="100,100">
+}
+.magical-button {
+  background: linear-gradient(135deg, #6b00b6, #c400ff);
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 2px solid #ff00ff;
+  border-radius: 12px;
+  text-shadow: 0 0 8px #ff00ff, 0 0 16px #c400ff;
+  box-shadow: 0 0 16px #c400ff, 0 0 32px #ff00ff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.magical-button:hover {
+  background: linear-gradient(135deg, #c400ff, #6b00b6);
+  box-shadow: 0 0 32px #ff00ff, 0 0 48px #ff99ff;
+  transform: scale(1.1);
+}
+
+.magical-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 16px #ff00ff, 0 0 24px #c400ff;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.audioPlayer = new Audio("https://raw.githubusercontent.com/fullefal/twinerystorymp3s/main/twinery.mp3");
+</script><tw-passagedata pid="1" name="Intro" tags="" position="0,0" size="100,100">
 &lt;img src=&quot;https://i.imgur.com/ICJOx0Z.png&quot; alt=&quot;title&quot; style=&quot;border-radius: 15px; display: block; margin: 0 auto;&quot; width=&quot;750&quot;&gt;
 
 &lt;center&gt;&lt;span class=&quot;magic-text&quot;&gt;Welcome to Mana Donuts!&lt;/span&gt;&lt;/center&gt;
-                                                   &lt;center&gt;&lt;span class =&quot;magic-text&quot;&gt;[[Enter the bakery.]]&lt;/span&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="2" name="Chapter 1" tags="" position="0,250" size="100,100">&lt;&lt;audio &quot;background&quot; &quot;fullefal.github.io/twinerystorymp3s/twinery.mp3&quot;&gt;&gt;
-&lt;&lt;audio &quot;background&quot; play&gt;&gt;
+                                                   &lt;center&gt;&lt;span class =&quot;magic-text&quot;&gt;[[Enter the bakery.]]&lt;/span&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="2" name="Chapter 1" tags="" position="0,250" size="100,100">&lt;button class=&quot;magical-button&quot; onclick=&quot;audioPlayer.play()&quot;&gt;Play&lt;/button&gt;  &lt;button class=&quot;magical-button&quot; onclick=&quot;audioPlayer.pause()&quot;&gt;Pause&lt;/button&gt;  &lt;button class=&quot;magical-button&quot; onclick=&quot;audioPlayer.currentTime = 0; audioPlayer.pause()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://imgur.com/a/bakery1-N3pCW6Y&quot; alt=&quot;Closed for business.&quot; style=&quot;display: block; margin: 0 auto;&quot; width=&quot;400&quot;&gt;&lt;/center&gt;
 
 It was a day like any other. The enticing aroma of freshly baked pastries filled the air. The door creaked open, accompanied by the cheerful chime of the service bell. You quickly approach the magical service counter. You notice a pink-haired gnome, reaching to place fresh biscuits into the oven. She turns towards you. &quot;Why hello,&quot; said the baker, turning towards you after narrowly saving a biscuit from certain disaster. &quot;You must be the help I requested! I hope you&#39;ve come prepared, I just received a huge order of Magical Eclairs for the Arcane Aid Foundation.&quot; Mana looks at you expectantly, forgetting to introduce herself. You should still introduce yourself, though.
 
@@ -170,7 +195,7 @@ $(document).on(&#39;click&#39;, &#39;#submitName&#39;, function () {
 
                                         &lt;center&gt; Well.. That&#39;s the end of that, I guess.&lt;/center&gt;
 
-&lt;img src=&quot;https://i.imgur.com/biutrC0.png&quot; alt=&quot;Closed for business.&quot; style=&quot;display: block; margin: 0 auto;&quot; width=&quot;800&quot;&gt;
+&lt;img src=&quot;https://i.imgur.com/biutrC0.png&quot; alt=&quot;Closed for business.&quot; style=&quot;display: block; margin: 0 auto;&quot; width=&quot;800&quot;&gt; 
 
 
                                        &lt;center&gt;Mana decided to close early for the day.&lt;/center&gt;
